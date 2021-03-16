@@ -43,11 +43,7 @@ def call(body) {
 
 	}
 
-         options {
-            skipDefaultCheckout()
-            gitLabConnection('GitLab_Generic')
-            timeout(time: 60, unit: 'MINUTES')
-        }
+  
 
   
         stages {
