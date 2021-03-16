@@ -54,12 +54,7 @@ def call(body) {
         }
 
         stages {
-            stage('Checkout Branch') {
-                steps {
-                   cleanWs()
-                    checkout scm
-                }
-            }
+  
 
             // stage('Pre-build-1'){
             //     parallel{
