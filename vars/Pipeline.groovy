@@ -49,10 +49,7 @@ def call(body) {
             timeout(time: 60, unit: 'MINUTES')
         }
 
-        triggers {
-        gitlab(triggerOnPush: true, triggerOnMergeRequest: true)
-        }
-
+  
         stages {
   
 
@@ -87,7 +84,7 @@ def call(body) {
             //     }
             // }
 
-            stage('diplay'){
+            stage('display'){
                 steps{
                     script{
                         echo "${env:name}"
