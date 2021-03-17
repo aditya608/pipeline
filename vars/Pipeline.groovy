@@ -40,7 +40,7 @@ def call(body) {
 	
       
        name = "${pipelineParams.name}"
-
+	    test="${TransferEnvironments}"
 	}
 
   
@@ -84,6 +84,8 @@ def call(body) {
                 steps{
                     script{
                         echo "${env:name}"
+			echo "${env:test}"
+			    
 
                     }
                 }
